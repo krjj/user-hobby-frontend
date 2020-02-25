@@ -116,7 +116,7 @@ export const addUser: ActionCreator<
         type: hobbyActionTypes.ADD_USER
       });
     } catch (err) {
-      alert('Cannot add user, username should be at least 3 chars') // Disclaimer = ideal way to display error is by storing the error message in store and rendering it by component, for the sake of brevity alert is used directly 
+      alert('Cannot add user, username should be at least 3 chars or something else') // Disclaimer = ideal way to display error is by storing the error message in store and rendering it by component, for the sake of brevity alert is used directly 
       console.error(err);
     }
   };
