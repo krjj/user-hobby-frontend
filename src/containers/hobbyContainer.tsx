@@ -72,7 +72,7 @@ class Hobby extends React.Component<IProps> {
             </div>
           </div>
           <div style={{ backgroundColor: this.props.selectedUserId ? '#FEE5D0' : 'grey' }} className="box-b panel">
-            {this.props.selectedUserId && (<div className="panelHead">
+            {this.props.selectedUserId!='' && (<div className="panelHead">
               <select id="passion" value={this.state.hobbyPassion} onChange={(e) => { this.onHobbyPassionType(e.target.value) }}>
                 <option value="low">low</option>
                 <option value="medium">medium</option>
