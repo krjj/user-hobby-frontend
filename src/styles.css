@@ -1,0 +1,126 @@
+.App {
+  font-family: 'Ubuntu';
+  text-align: center;
+}
+
+/* Panels: */
+
+.panel {
+  border-width: 3px;
+  border-style: solid;
+  height: calc(100vh - 68px);
+}
+
+/* Resizing */
+
+.resize-x {
+  resize: horizontal;
+  overflow: hidden;
+}
+
+/* Panel Colors */
+
+.box-a {
+  border-color: #F6F2A4;
+  background: #FFFEDB;
+}
+
+.box-b {
+  border-color: #F2B98D;
+  background: #FEE5D0;
+}
+
+/* Initial Dimensions */
+
+.p-25 {
+  width: 25%;
+}
+
+.p-50 {
+  width: 50%;
+}
+
+.p-75 {
+  width: 75%;
+}
+
+/* Split View */
+
+.split-view {
+  margin: 0 0;
+  width: 100%;
+  clear: both;
+  display: table;
+}
+
+.split-view .panel {
+  display: table-cell;
+}
+
+.userItem {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+}
+
+.panelHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panelHead>input {
+  width: 70%;
+  font-size: 15px;
+  padding-left: 0.5em;
+  line-height: 1.5em;
+  border: 1px solid black;
+}
+
+.panelHead>select {
+  width: 30%;
+  font-size: 15px;
+  padding-left: 0.5em;
+  line-height: 1.5em;
+  border: 1px solid black;
+}
+
+.panelHead>button {
+  width: 30%;
+  font-size: 15px;
+  border-radius: 0px;
+  border: 1px solid black;
+}
+
+.userlist {
+  margin-top: 0em;
+}
+
+.hobbyItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+header {
+  height: 28px;
+  border-color: rgb(138, 232, 245);
+  background: #FFFEDB;
+  border-width: 3px;
+  border-style: solid;
+  padding: 5px;
+  vertical-align: middle;
+  font-size: 26px;
+}
+
+header>sup {
+  font-size: 12px;
+}
